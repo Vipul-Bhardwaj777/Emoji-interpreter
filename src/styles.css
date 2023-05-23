@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
+
+body {
+  font-family: "Happy Monkey", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #dddd;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 500px;
+  margin: 25vh auto;
+  text-align: center;
+  padding: 1em;
+  border: 2px solid grey;
+  background-color: #34d399;
+  border-radius: 10px;
+  box-shadow: 0 1em 1em -0.5em rgba(0, 0, 0, 0.4);
+}
+
+input {
+  padding: 1em;
+  border: 1.5px solid black;
+  border-radius: 10px;
+  background-color: #eeee;
+  margin: 1em 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 1em 1em -0.7em rgba(0, 0, 0, 0.4);
+}
+
+input:hover {
+  background-color: #dddd;
+}
+
+.meaning {
+  padding: 1em;
+  font-size: x-large;
+}
