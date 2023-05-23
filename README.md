@@ -1,2 +1,2 @@
 # Emoji-interpreter
-Created with CodeSandbox
+My first Reactjs app Created with CodeSandbox
