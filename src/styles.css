@@ -38,3 +38,7 @@ input:hover {
   padding: 1em;
   font-size: x-large;
 }
+
+.emoji-list:hover {
+  cursor: pointer;
+}
