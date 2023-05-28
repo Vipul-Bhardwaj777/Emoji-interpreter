@@ -12,8 +12,10 @@ const emojiDictionary = {
   "😍": "Heart-eyes",
   "🤑": "Money-mouth-face",
   "🤗": "Hugs",
-  "😋": "Yummy"
+  "😋": "Yummy",
 };
+
+var emojiArr = Object.keys(emojiDictionary);
 
 export default function App() {
   const [meaning, setInput] = useState("");
@@ -27,6 +29,11 @@ export default function App() {
     }
     setInput(meaning);
   }
+
+  function clickHandler(emoji) {
+    var meaning = emojiDictionary[emoji];
+    setInput(meaning);
+  }
   return (
     <div className="App">
       <h1>Emoji Interpreter</h1>
@@ -36,6 +43,19 @@ export default function App() {
         <strong>
           <span style={{ color: "#9333ea" }}> {meaning} </span>
         </strong>
+        <h3 style={{ color: "#9333ea" }}>Emojis we know</h3>
+        {emojiArr.map((emoji) => {
+          return (
+            <span class="emoji-list"
+              onClick={() => clickHandler(emoji)}
+              style={{ fontSize: "1.5em", padding: "0.5em" }}
+              key={emoji}
+            >
+              {" "}
+              {emoji}{" "}
+            </span>
+          );
+        })}
       </div>
     </div>
   );
