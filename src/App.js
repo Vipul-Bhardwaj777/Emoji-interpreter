@@ -43,6 +43,7 @@ export default function App() {
         <strong>
           <span style={{ color: "#9333ea" }}> {meaning} </span>
         </strong>
+        
         <h3 style={{ color: "#9333ea" }}>Emojis we know</h3>
         {emojiArr.map((emoji) => {
           return (
