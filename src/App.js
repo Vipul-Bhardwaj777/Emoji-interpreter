@@ -12,7 +12,7 @@ const emojiDictionary = {
   "😍": "Heart-eyes",
   "🤑": "Money-mouth-face",
   "🤗": "Hugs",
-  "😋": "Yummy",
+  "😋": "Yummy"
 };
 
 var emojiArr = Object.keys(emojiDictionary);
@@ -46,7 +46,8 @@ export default function App() {
         <h3 style={{ color: "#9333ea" }}>Emojis we know</h3>
         {emojiArr.map((emoji) => {
           return (
-            <span class="emoji-list"
+            <span
+              class="emoji-list"
               onClick={() => clickHandler(emoji)}
               style={{ fontSize: "1.5em", padding: "0.5em" }}
               key={emoji}
@@ -57,6 +58,27 @@ export default function App() {
           );
         })}
       </div>
+
+      <ul>
+        <li className="list">
+          <a className="link" href="https://github.com/Vipul-Bhardwaj777">
+            Github
+          </a>
+        </li>
+        <li className="list">
+          <a className="link" href="https://twitter.com/Vipul__777">
+            Twitter
+          </a>
+        </li>
+        <li className="list">
+          <a
+            className="link"
+            href="https://www.linkedin.com/in/vipul-bhardwaj-444888207/"
+          >
+            Linkdin
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
